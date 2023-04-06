@@ -1,22 +1,28 @@
 import "./App.css";
-import Clinic from "./Clinic";
-import ArrayOfEditableBoxes from "./components/exercises/ArrayOfEditableBoxes";
-import { Route, Routes } from "react-router-dom";
-import Home from "./components/home/Home";
-import Calculator from "./components/exercises/Calculator";
-import { Crosel } from "./components/exercises/Crosel";
+import { Appointment } from "./components/Appointment";
+import { LocalizationProvider } from "@mui/x-date-pickers";
+import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
+
+import { Navbar } from "./components/Navbar";
+import { StyledContainer } from "./app.styled";
+import { Feedbacks } from "./components/feedbacks/Feedbacks";
+import { Services } from "./components/services/Services";
+import { Contact } from "./components/contact/Contact";
 
 function App() {
   return (
-    <div className="App">
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="clinic" element={<Clinic />} />
-        <Route path="arrays" element={<ArrayOfEditableBoxes />} />
-        <Route path="calc" element={<Calculator />} />
-        <Route path="crosel" element={<Crosel />} />
-      </Routes>
-    </div>
+    <>
+      <StyledContainer>
+        <Navbar />
+        <LocalizationProvider dateAdapter={AdapterDayjs}>
+          <Appointment />
+        </LocalizationProvider>
+        <Services />
+
+        <Feedbacks />
+        <Contact />
+      </StyledContainer>
+    </>
   );
 }
 
