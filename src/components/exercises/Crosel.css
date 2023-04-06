@@ -1,0 +1,27 @@
+.ItemContainer {
+
+border-radius: 25px;
+  background-image: linear-gradient(rgb(0, 0, 0), rgb(255, 255, 255));
+border: solid;
+height: 10rem;
+width:50rem;
+
+}
+
+.ButtonContainer button {
+  margin-top: 1rem;
+  width: 5rem;
+  margin-right: 3rem;
+  background-color:rgb(196, 255, 239);
+}
+.Item {
+  width: 9.5rem;
+  border-radius: 25px;
+  border:solid;
+  background-image: linear-gradient(red, blue);
+  height: 8rem;
+  margin-top: 1rem;
+  margin-left: .2rem;
+  display: inline-flex;
+
+}

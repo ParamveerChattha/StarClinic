@@ -1,0 +1,27 @@
+.BaseElemets {
+
+  border: 1rem;
+  border-style: dashed;
+  width: 30rem;
+  display: flex;
+
+}
+
+.ElementBoxes {
+  display: fletable-cell;
+  width: auto;
+  align-items: center;
+}
+
+.ElementBoxes input{
+height: 3rem;
+font-size: 1.2rem;
+width: 3rem;
+text-align: center;
+
+}
+
+.AddElement{
+  margin-left: -12px;
+
+}

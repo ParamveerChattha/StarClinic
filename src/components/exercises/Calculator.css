@@ -1,0 +1,19 @@
+.Base {
+  border-style: groove;
+  background-color: aqua;
+    display: grid;
+  align-items: center;
+}
+
+.UserInputs {
+
+  text-align: center;
+display: grid;
+width: 20px;
+margin-left: 10rem;
+margin-top: 2rem;
+}
+
+.OperationalButton{
+  cursor: pointer;
+}
