@@ -8,11 +8,11 @@ More is coming up. :)
 
 # Upcoming Features:
 
-1 - Working model of apointments..
-2 - Patients could give feedbacks, which will be made live.
-3 - Admin can choose the feedbacks. :) 
-4 - Services Icons to show description
-5 - Navbar to look better
+1 - Working model of apointments.. \
+2 - Patients could give feedbacks, which will be made live. \
+3 - Admin can choose the feedbacks. :) \
+4 - Services Icons to show description \
+5 - Navbar to look better \
 6 - Unit tests. :) 
 
 
