@@ -1,4 +1,4 @@
-#Desc:
+# Description
 
 Hi, this is a sample project for inhouse use. its under development the UI can be accessed @ https://lively-syrniki-51f118.netlify.app/
 
