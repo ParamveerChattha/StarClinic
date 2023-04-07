@@ -2,7 +2,18 @@
 
 Hi, this is a sample project for inhouse use. its under development the UI can be accessed @ https://lively-syrniki-51f118.netlify.app/
 
+It an information page for a dental clinic. the Patients could book an appointment (currently dummy), find the available services, feedbacks of other patients and the contact details
+
 More is coming up. :) 
+
+# Upcoming Features:
+
+1 - Working model of apointments..
+2 - Patients could give feedbacks, which will be made live.
+3 - Admin can choose the feedbacks. :) 
+4 - Services Icons to show description
+5 - Navbar to look better
+6 - Unit tests. :) 
 
 
 # Getting Started with Create React App
