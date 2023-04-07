@@ -9,10 +9,6 @@ const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 const images = [
   {
-    id: "1",
-    imgPath: "./clinic1.webp",
-  },
-  {
     id: "2",
     imgPath: "clinic2.jpeg",
   },
