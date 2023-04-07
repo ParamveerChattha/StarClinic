@@ -16,6 +16,8 @@ import { Age } from "./appointment/Age";
 import { SwipeableImages } from "./appointment/carousel";
 import { Gender } from "./appointment/Gender";
 import { Reason } from "./appointment/Reason";
+import { CrouselImageBox } from "./appointment/CrouselImageBox";
+import { DentalImages } from "../data/DentalImages";
 
 export const Appointment = () => {
   const [name, setName] = useState();
@@ -32,6 +34,8 @@ export const Appointment = () => {
 
   const minAppointmentTime = dayjs().set("hour", 10).startOf("hour");
   const maxAppointmentTime = dayjs().set("hour", 19).endOf("hour");
+
+  console.log("Dental Images:", DentalImages);
 
   useEffect(() => {}, [cancel]);
 
@@ -58,7 +62,10 @@ export const Appointment = () => {
   return (
     <>
       <StyledDivContainer>
-        <SwipeableImages />
+        <SwipeableImages
+          swipeableContent={DentalImages}
+          SwipeableInnerComponent={CrouselImageBox}
+        />
         <StyledBox>
           <StyledAppointmentHeader>Book Appointment</StyledAppointmentHeader>
           <StyledInputDiv>
