@@ -1,12 +1,25 @@
-import { Card, Container, styled } from "@mui/material";
+import { Box, Card, CardContent, styled } from "@mui/material";
 
-// export const StyledFeedbackContainer = styled(Container)({
-//   height: "40rem",
-// });
-
-export const StyledFeedbackCard = styled(Card)({
+export const StyledFeedbackbackground = styled(Card)({
   backgroundColor: "white",
-  height: "14rem",
-  width: "100%",
+  height: "24rem",
+
   overflow: "visible",
+  marginLeft: "50%",
+});
+
+export const StyledFeedbackCard = styled("div")({
+  marginTop: "4rem",
+  border: "solid",
+  borderRadius: "50%",
+  height: "18rem",
+});
+
+export const StyledFeedbackContentBox = styled(Box)({
+  marginLeft: "17%",
+  marginTop: "4%",
+});
+
+export const StyledRatingBox = styled(Box)({
+  marginLeft: "20%",
 });

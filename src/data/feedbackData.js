@@ -51,7 +51,7 @@ export const feedbackData = [
     dob: "17-03-1989",
     ratingLabel: 5,
     feedbackCaption: "best Dental of town",
-    feedbackDescription: `Didi is the best`,
+    feedbackDescription: `Didu is the best`,
   },
   {
     patientId: 5,

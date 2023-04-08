@@ -1,6 +1,8 @@
 import React from "react";
 import { FeedbackCard } from "./FeedbackCard.js";
 import {
+  CarouselBox,
+  DummyBox,
   StyledFeedbackContainer,
   StyledInnerContainer,
 } from "./Feedback.styled.js";
@@ -11,10 +13,13 @@ export const Feedbacks = () => {
   return (
     <section id="Feedbacks">
       <StyledFeedbackContainer>
-        <SwipeableCarousel
-          swipeableContent={feedbackData}
-          SwipeableInnerComponent={FeedbackCard}
-        />
+        <DummyBox />
+        <CarouselBox>
+          <SwipeableCarousel
+            swipeableContent={feedbackData}
+            SwipeableInnerComponent={FeedbackCard}
+          />
+        </CarouselBox>
       </StyledFeedbackContainer>
     </section>
   );
