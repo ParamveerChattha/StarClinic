@@ -11,7 +11,3 @@ export const StyledAgeBox = styled(Box)({
 export const StyledFormControl = styled(FormControl)({
   width: "5rem",
 });
-
-export const StyledCarouselBox = styled(Box)({
-  width: "60%",
-});

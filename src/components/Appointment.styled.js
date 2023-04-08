@@ -2,7 +2,7 @@ import { Box, Button, styled, TextField, Typography } from "@mui/material";
 
 export const StyledImageBox = styled(Box)({
   height: "38rem",
-  width: "100%",
+  width: "60%",
 });
 
 export const StyledImage = styled("img")({

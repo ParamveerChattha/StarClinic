@@ -2,7 +2,7 @@ import * as React from "react";
 import { useTheme } from "@mui/material/styles";
 import SwipeableViews from "react-swipeable-views";
 import { autoPlay } from "react-swipeable-views-utils";
-import { StyledCarouselBox } from "../components/appointment/styled";
+import { StyledCarouselBox } from "./styled";
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
