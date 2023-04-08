@@ -4,6 +4,7 @@ import {
   StyledFeedbackContainer,
   StyledInnerContainer,
 } from "./Feedback.styled.js";
+import { SwipeableCarousel } from "../../common/SwipeableCarousel.js";
 
 const customerRatings = [
   { id: 1 },
@@ -19,9 +20,10 @@ export const Feedbacks = () => {
     <section id="Feedbacks">
       <StyledFeedbackContainer>
         <StyledInnerContainer>
-          {customerRatings.slice(0, 3).map((customerRating) => (
-            <FeedbackCard />
-          ))}
+          <SwipeableCarousel
+            swipeableContent={customerRatings.slice(0, 6)}
+            SwipeableInnerComponent={FeedbackCard}
+          />
         </StyledInnerContainer>
       </StyledFeedbackContainer>
     </section>

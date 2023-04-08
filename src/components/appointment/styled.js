@@ -13,5 +13,5 @@ export const StyledFormControl = styled(FormControl)({
 });
 
 export const StyledCarouselBox = styled(Box)({
-  width: "45rem",
+  width: "60%",
 });

@@ -2,11 +2,11 @@ import * as React from "react";
 import { useTheme } from "@mui/material/styles";
 import SwipeableViews from "react-swipeable-views";
 import { autoPlay } from "react-swipeable-views-utils";
-import { StyledCarouselBox } from "./styled";
+import { StyledCarouselBox } from "../components/appointment/styled";
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
-export const SwipeableImages = ({
+export const SwipeableCarousel = ({
   swipeableContent,
   SwipeableInnerComponent,
 }) => {
@@ -18,7 +18,7 @@ export const SwipeableImages = ({
   };
 
   return (
-    <StyledCarouselBox sx={{ wdith: "45rem" }}>
+    <StyledCarouselBox>
       <AutoPlaySwipeableViews
         axis={theme.direction === "rtl" ? "x-reverse" : "x"}
         index={activeStep}

@@ -4,10 +4,6 @@ import TextField from "@mui/material/TextField";
 import { StyledReasonTextfield } from "./Reasons.styled";
 
 export const Reason = ({ setReason }) => {
-  const handleReasons = (reasons) => {
-    console.log("reasons: ", reasons);
-  };
-
   return (
     <Autocomplete
       multiple

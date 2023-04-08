@@ -1,5 +1,10 @@
-import { Container, styled } from "@mui/material";
+import { Card, Container, styled } from "@mui/material";
 
-export const StyledFeedbackContainer = styled(Container)({
-  width: "25rem",
+// export const StyledFeedbackContainer = styled(Container)({
+//   height: "40rem",
+// });
+
+export const StyledFeedbackCard = styled(Card)({
+  height: "40rem",
+  background: "linear-gradient(3600deg, #1f3238, transparent)",
 });
