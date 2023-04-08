@@ -5,5 +5,8 @@ import { Card, Container, styled } from "@mui/material";
 // });
 
 export const StyledFeedbackCard = styled(Card)({
-  height: "40rem",
+  backgroundColor: "white",
+  height: "14rem",
+  width: "100%",
+  overflow: "visible",
 });
