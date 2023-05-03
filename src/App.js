@@ -18,7 +18,6 @@ function App() {
           <Appointment />
         </LocalizationProvider>
         <Services />
-
         <Feedbacks />
         <Contact />
       </StyledContainer>

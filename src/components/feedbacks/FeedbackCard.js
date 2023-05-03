@@ -11,7 +11,6 @@ import {
 } from "./FeedbackCard.styled";
 
 export const FeedbackCard = ({ step }) => {
-  console.log("patientFeedback", step);
   return (
     <StyledFeedbackbackground>
       <StyledFeedbackCard>

@@ -5,8 +5,6 @@ import Toolbar from "@mui/material/Toolbar";
 import Button from "@mui/material/Button";
 import "./Navbar.css";
 import { ClinicNameTypography, StyledContainer } from "./Navbar.styled";
-import Appointment from "./Appointment";
-import Feedbacks from "./feedbacks/Feedbacks";
 
 const pages = ["Services", "Feedbacks", "ContactUs"];
 
