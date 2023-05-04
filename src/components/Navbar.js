@@ -49,7 +49,7 @@ export const Navbar = () => {
             ))}
           </Box>
           <Link to="PatientSearch">
-            <FindButton>Find Patient</FindButton>
+            <FindButton>Manage Patient</FindButton>
           </Link>
         </Toolbar>
       </StyledContainer>
