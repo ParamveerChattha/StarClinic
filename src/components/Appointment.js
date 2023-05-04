@@ -28,6 +28,7 @@ export const Appointment = () => {
   const [appointDateAndTime, setAppointDateAndTime] = useState();
   const [contactError, setContactError] = useState(false);
   const [cancel, setCancel] = useState(false);
+  const [patientDetails, setPatientDetails] = useState({});
 
   const minAppointmentDate = dayjs().add(1, "day");
   const maxAppointmentDate = dayjs().add(14, "day");
@@ -38,8 +39,17 @@ export const Appointment = () => {
   useEffect(() => {}, [cancel]);
 
   const submitForm = () => {
-    if (!contactError)
+    if (!contactError) {
+      setPatientDetails({
+        name: name,
+        contact: contact,
+        age: age,
+        gender: gender,
+        reasons: reason,
+        appointmentDate: appointDateAndTime,
+      });
       window.alert("Appointment Detail Shared. you will receive a call");
+    }
   };
   const handleInputChange = (e) => {
     if (e.target.name === "Contact" && /^[-+]?[0-9]+$/.test(e.target.value)) {
@@ -52,6 +62,12 @@ export const Appointment = () => {
       setName(e.target.value);
     }
   };
+
+  useEffect(() => {
+    if (Object.keys(patientDetails).length > 0) {
+      console.log("patientDetails: ", patientDetails);
+    }
+  }, [patientDetails]);
 
   const cancelForm = () => {
     setCancel((cancel) => !cancel);
@@ -93,6 +109,7 @@ export const Appointment = () => {
               maxDate={maxAppointmentDate}
               minTime={minAppointmentTime}
               maxTime={maxAppointmentTime}
+              defaultValue={dayjs()}
               label="choose the date and time"
               onChange={(newval) =>
                 setAppointDateAndTime(dayjs(newval).toString())

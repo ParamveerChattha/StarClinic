@@ -1,25 +1,17 @@
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import { Appointment } from "./components/Appointment";
-import { LocalizationProvider } from "@mui/x-date-pickers";
-import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
-
-import { Navbar } from "./components/Navbar";
+import { Home } from "./pages/Home";
+import { PatientSearch } from "./pages/PatientSearch";
 import { StyledContainer } from "./app.styled";
-import { Feedbacks } from "./components/feedbacks/Feedbacks";
-import { Services } from "./components/services/Services";
-import { Contact } from "./components/contact/Contact";
 
 function App() {
   return (
     <>
       <StyledContainer>
-        <Navbar />
-        <LocalizationProvider dateAdapter={AdapterDayjs}>
-          <Appointment />
-        </LocalizationProvider>
-        <Services />
-        <Feedbacks />
-        <Contact />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="PatientSearch" element={<PatientSearch />} />
+        </Routes>
       </StyledContainer>
     </>
   );

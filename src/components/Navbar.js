@@ -4,7 +4,12 @@ import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import Button from "@mui/material/Button";
 import "./Navbar.css";
-import { ClinicNameTypography, StyledContainer } from "./Navbar.styled";
+import {
+  ClinicNameTypography,
+  FindButton,
+  StyledContainer,
+} from "./Navbar.styled";
+import { Link } from "react-router-dom";
 
 const pages = ["Services", "Feedbacks", "ContactUs"];
 
@@ -43,6 +48,9 @@ export const Navbar = () => {
               </a>
             ))}
           </Box>
+          <Link to="PatientSearch">
+            <FindButton>Find Patient</FindButton>
+          </Link>
         </Toolbar>
       </StyledContainer>
     </AppBar>
