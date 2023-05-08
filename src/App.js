@@ -7,12 +7,10 @@ import { StyledContainer } from "./app.styled";
 function App() {
   return (
     <>
-      <StyledContainer>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="PatientSearch" element={<PatientSearch />} />
-        </Routes>
-      </StyledContainer>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="PatientSearch" element={<PatientSearch />} />
+      </Routes>
     </>
   );
 }

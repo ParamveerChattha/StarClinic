@@ -10,6 +10,7 @@ import {
   StyledContainer,
 } from "./Navbar.styled";
 import { Link } from "react-router-dom";
+import { Login } from "./navbar/Login";
 
 const pages = ["Services", "Feedbacks", "ContactUs"];
 
@@ -48,6 +49,7 @@ export const Navbar = () => {
               </a>
             ))}
           </Box>
+          <Login />
           <Link to="PatientSearch">
             <FindButton>Manage Patient</FindButton>
           </Link>

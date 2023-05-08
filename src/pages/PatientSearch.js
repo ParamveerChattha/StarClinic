@@ -1,11 +1,12 @@
-import { StyledContainer } from "./Home.styled";
+import { StyledManagePatientContainer } from "../app.styled";
+import { ManagePatientLanding } from "../components/managePatient/ManagePatientLanding";
 
 export const PatientSearch = () => {
   return (
     <>
-      <h1>Search Patient</h1>
-
-      <h2>work under progress</h2>
+      <StyledManagePatientContainer>
+        <ManagePatientLanding />
+      </StyledManagePatientContainer>
     </>
   );
 };
