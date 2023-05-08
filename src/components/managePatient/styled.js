@@ -10,7 +10,6 @@ export const StyledButton = styled(Button)({
 
   height: "8rem",
   width: "20rem",
-  fontSize: "5rem",
   textSizeAdjust: "auto",
 });
 
