@@ -1,5 +1,10 @@
-import { FormControlLabel, Radio, RadioGroup } from "@mui/material";
-import { StyledButton, StyledFormContainer, StyledInput } from "./styled";
+import { Button, FormControlLabel, Radio, RadioGroup } from "@mui/material";
+import {
+  StyledButton,
+  StyledFormContainer,
+  StyledInput,
+  StyledSaveButton,
+} from "./styled";
 import { useEffect, useState } from "react";
 
 export const AddPatient = () => {
@@ -28,6 +33,7 @@ export const AddPatient = () => {
 
   return (
     <>
+      <h1>Add Patient</h1>
       <form onSubmit={addPatientAction}>
         <StyledFormContainer>
           <StyledInput
@@ -76,10 +82,15 @@ export const AddPatient = () => {
             placeholder="procedure"
           />
 
-          <button label="Save" type="submit">
+          <StyledSaveButton
+            variant="contained"
+            color="success"
+            label="Save"
+            type="submit"
+          >
             {" "}
             Save{" "}
-          </button>
+          </StyledSaveButton>
         </StyledFormContainer>
       </form>
     </>

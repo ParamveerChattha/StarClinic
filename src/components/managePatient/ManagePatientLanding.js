@@ -13,7 +13,8 @@ export const ManagePatientLanding = () => {
         <StyledButton
           onClick={(e) => {
             e.preventDefault();
-            setIsAddPatientActive((prevState) => !prevState);
+            setIsSearchPatientActive(false);
+            setIsAddPatientActive(true);
           }}
         >
           ADD NEW PATIENT
@@ -22,7 +23,8 @@ export const ManagePatientLanding = () => {
         <StyledButton
           onClick={(e) => {
             e.preventDefault();
-            setIsAddPatientActive((prevState) => !prevState);
+            setIsAddPatientActive(false);
+            setIsSearchPatientActive(true);
           }}
         >
           SEARCH PATIENT
@@ -30,6 +32,7 @@ export const ManagePatientLanding = () => {
       </StyledOuterContainer>
 
       {isAddPatientActive && <AddPatient />}
+      {isSearchPatientActive && <SearchPatient />}
     </>
   );
 };

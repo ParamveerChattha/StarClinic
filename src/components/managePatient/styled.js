@@ -5,7 +5,7 @@ export const StyledOuterContainer = styled(Container)({});
 
 export const StyledButton = styled(Button)({
   colorScheme: "light",
-
+  border: "solid",
   borderRadius: "1rem",
 
   height: "8rem",
@@ -25,4 +25,9 @@ export const StyledFormContainer = styled.div({
   width: "40rem",
   marginLeft: " 15rem",
   rowGap: "0.3rem",
+});
+
+export const StyledSaveButton = styled(Button)({
+  width: "8rem",
+  marginLeft: "20rem",
 });
