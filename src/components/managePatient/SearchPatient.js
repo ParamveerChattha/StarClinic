@@ -4,8 +4,10 @@ import { useState } from "react";
 import PatientTable from "./patientTable";
 
 export const SearchPatient = () => {
-  const [listOfPatients, setListOfPatients] = useState(
-    [
+  const [listOfPatients, setListOfPatients] = useState();
+
+  const searchPatients = () => {
+    setListOfPatients([
       {
         firstName: "firstName1",
         lastName: "lastName1",
@@ -25,14 +27,9 @@ export const SearchPatient = () => {
         diagnosis: "pain in gums",
         procedure: "scaling",
       },
-    ],
-    []
-  );
-  const searchPatients = () => {
-    setListOfPatients([
-      { firstName: "firstName", lastName: "lastName", dob: "DOB" },
     ]);
   };
+
   return (
     <>
       <h1>Search Patient</h1>
