@@ -1,7 +1,7 @@
 import { Button } from "@mui/material";
 import { StyledButton, StyledFormContainer } from "./styled";
 import { useState } from "react";
-import { PatientTable } from "./PatientTable";
+import PatientTable from "./patientTable";
 
 export const SearchPatient = () => {
   const [listOfPatients, setListOfPatients] = useState(

@@ -9,7 +9,7 @@ import {
 import { StyledTableCell, StyledTableRow } from "./styledPatientTable";
 import { useEffect } from "react";
 
-export const PatientTable = ({ patientDetails }) => {
+const PatientTable = ({ patientDetails }) => {
   useEffect(() => {
     console.log("patientDetails: ", patientDetails);
   }, []);
@@ -62,3 +62,5 @@ export const PatientTable = ({ patientDetails }) => {
     </>
   );
 };
+
+export default PatientTable;
