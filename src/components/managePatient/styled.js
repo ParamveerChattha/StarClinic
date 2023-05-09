@@ -20,6 +20,7 @@ export const StyledInput = styled(Input)({
 });
 
 export const StyledFormContainer = styled.div({
+  marginTop: "3rem",
   display: "grid",
   width: "40rem",
   marginLeft: " 15rem",
