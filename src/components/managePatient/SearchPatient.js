@@ -1,9 +1,33 @@
 import { Button } from "@mui/material";
 import { StyledButton, StyledFormContainer } from "./styled";
 import { useState } from "react";
+import { PatientTable } from "./PatientTable";
 
 export const SearchPatient = () => {
-  const [listOfPatients, setListOfPatients] = useState();
+  const [listOfPatients, setListOfPatients] = useState(
+    [
+      {
+        firstName: "firstName1",
+        lastName: "lastName1",
+        phoneNumber: 99889933,
+        gender: "male",
+        age: 23,
+        diagnosis: "pain in jadd",
+        procedure: "rct",
+      },
+
+      {
+        firstName: "firstName2",
+        lastName: "lastName3",
+        phoneNumber: 99889933,
+        gender: "female",
+        age: 29,
+        diagnosis: "pain in gums",
+        procedure: "scaling",
+      },
+    ],
+    []
+  );
   const searchPatients = () => {
     setListOfPatients([
       { firstName: "firstName", lastName: "lastName", dob: "DOB" },
@@ -19,7 +43,7 @@ export const SearchPatient = () => {
         <Button onClick={searchPatients}>Search</Button>
       </StyledFormContainer>
 
-      {listOfPatients && <patientTable patientDetails={listOfPatients} />}
+      {listOfPatients && <PatientTable patientDetails={listOfPatients} />}
     </>
   );
 };
