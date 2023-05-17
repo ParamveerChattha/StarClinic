@@ -9,13 +9,3 @@ export const StyledInnerContainer = styled(Container)({
   display: "flex",
   marginLeft: "15%",
 });
-
-export const DummyBox = styled(Box)({
-  backgroundColor: "white",
-  height: "25rem",
-  width: "31.1%",
-  position: "fixed",
-  zIndex: 1,
-});
-
-export const CarouselBox = styled(Box)({});

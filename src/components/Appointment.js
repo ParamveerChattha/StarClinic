@@ -11,6 +11,7 @@ import {
   StyledTextField,
   StyledInputDiv,
   StyledAgeGenderDiv,
+  StyledFormContainer,
 } from "./Appointment.styled";
 import { Age } from "./appointment/Age";
 import { SwipeableCarousel } from "../common/SwipeableCarousel";
@@ -80,65 +81,68 @@ export const Appointment = () => {
           swipeableContent={DentalImages}
           SwipeableInnerComponent={CrouselImageBox}
         />
-        <StyledBox>
-          <StyledAppointmentHeader>Book Appointment</StyledAppointmentHeader>
-          <StyledInputDiv>
-            <StyledTextField
-              required
-              id="outlined-basic"
-              label="Name"
-              name="Name"
-              variant="standard"
-              onChange={(e) => handleInputChange(e)}
-            />
-            <StyledTextField
-              required
-              id="outlined-basic"
-              label="Contact"
-              name="Contact"
-              variant="standard"
-              helperText={contactError ? "Incorrect entry." : null}
-              onChange={(e) => handleInputChange(e)}
-            />
-            <StyledAgeGenderDiv>
-              <Age age={age} setAge={setAge} /> <Gender setGender={setGender} />
-            </StyledAgeGenderDiv>
-            <Reason setReason={setReason} />
-            <DateTimePicker
-              minDate={minAppointmentDate}
-              maxDate={maxAppointmentDate}
-              minTime={minAppointmentTime}
-              maxTime={maxAppointmentTime}
-              defaultValue={dayjs()}
-              label="choose the date and time"
-              onChange={(newval) =>
-                setAppointDateAndTime(dayjs(newval).toString())
-              }
-            />
-          </StyledInputDiv>
-          <StyledButtonDiv>
-            <StyledButton
-              variant="contained"
-              color="success"
-              onClick={(e) => {
-                e.preventDefault();
-                submitForm();
-              }}
-            >
-              BOOK
-            </StyledButton>
-            <StyledButton
-              variant="contained"
-              color="error"
-              onClick={(e) => {
-                e.preventDefault();
-                cancelForm();
-              }}
-            >
-              CANCEL
-            </StyledButton>
-          </StyledButtonDiv>
-        </StyledBox>
+        <StyledFormContainer>
+          <StyledBox>
+            <StyledAppointmentHeader>Book Appointment</StyledAppointmentHeader>
+            <StyledInputDiv>
+              <StyledTextField
+                required
+                id="outlined-basic"
+                label="Name"
+                name="Name"
+                variant="standard"
+                onChange={(e) => handleInputChange(e)}
+              />
+              <StyledTextField
+                required
+                id="outlined-basic"
+                label="Contact"
+                name="Contact"
+                variant="standard"
+                helperText={contactError ? "Incorrect entry." : null}
+                onChange={(e) => handleInputChange(e)}
+              />
+              <StyledAgeGenderDiv>
+                <Age age={age} setAge={setAge} />{" "}
+                <Gender setGender={setGender} />
+              </StyledAgeGenderDiv>
+              <Reason setReason={setReason} />
+              <DateTimePicker
+                minDate={minAppointmentDate}
+                maxDate={maxAppointmentDate}
+                minTime={minAppointmentTime}
+                maxTime={maxAppointmentTime}
+                defaultValue={dayjs()}
+                label="choose the date and time"
+                onChange={(newval) =>
+                  setAppointDateAndTime(dayjs(newval).toString())
+                }
+              />
+            </StyledInputDiv>
+            <StyledButtonDiv>
+              <StyledButton
+                variant="contained"
+                color="success"
+                onClick={(e) => {
+                  e.preventDefault();
+                  submitForm();
+                }}
+              >
+                BOOK
+              </StyledButton>
+              <StyledButton
+                variant="contained"
+                color="error"
+                onClick={(e) => {
+                  e.preventDefault();
+                  cancelForm();
+                }}
+              >
+                CANCEL
+              </StyledButton>
+            </StyledButtonDiv>
+          </StyledBox>
+        </StyledFormContainer>
       </StyledDivContainer>
     </>
   );

@@ -26,7 +26,7 @@ const PatientTable = ({ patientDetails }) => {
               <StyledTableCell align="right">phone Number</StyledTableCell>
               <StyledTableCell align="right">diagnosis</StyledTableCell>
               <StyledTableCell align="right">procedure</StyledTableCell>
-              <StyledTableCell align="right">Actions</StyledTableCell>
+              <StyledTableCell align="center">Actions</StyledTableCell>
             </TableRow>
           </TableHead>
           <TableBody>

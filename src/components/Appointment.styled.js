@@ -1,4 +1,11 @@
-import { Box, Button, styled, TextField, Typography } from "@mui/material";
+import {
+  Box,
+  Button,
+  Container,
+  styled,
+  TextField,
+  Typography,
+} from "@mui/material";
 
 export const StyledImageBox = styled(Box)({
   height: "38rem",
@@ -11,9 +18,17 @@ export const StyledImage = styled("img")({
   width: "inherit",
 });
 
+export const StyledFormContainer = styled(Box)({
+  background: "white",
+  width: "100%",
+  marginLeft: "-30rem",
+  zIndex: 1,
+});
+
 export const StyledBox = styled(Box)({
   background: "linear-gradient(3600deg, #1f3238, transparent)",
   width: "100%",
+  height: "38rem",
 });
 
 export const StyledDivContainer = styled("div")({
