@@ -14,7 +14,6 @@ export const FeedbackCard = ({ step }) => {
   return (
     <>
       <StyledFeedbackbackground>
-        background
         <StyledFeedbackCircle>
           <StyledFeedbackContentBox>
             <StyledRatingBox>

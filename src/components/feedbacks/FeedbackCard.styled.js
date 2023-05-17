@@ -2,17 +2,18 @@ import { Box, Card, CardContent, styled } from "@mui/material";
 
 export const StyledFeedbackbackground = styled(Box)({
   backgroundColor: "white",
-  height: "24rem",
+  height: "28rem",
 
   overflow: "visible",
-  marginLeft: "50%",
+  marginLeft: "20%",
+  marginRight: "25%",
 });
 
 export const StyledFeedbackCircle = styled("div")({
-  marginTop: "4rem",
+  marginTop: "2rem",
   border: "solid",
   borderRadius: "50%",
-  height: "18rem",
+  height: "25rem",
 });
 
 export const StyledFeedbackContentBox = styled(Box)({
